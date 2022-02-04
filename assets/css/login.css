@@ -1,0 +1,106 @@
+h2
+{
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+p.text {
+    font-size: 13px;
+}
+
+section.intro
+{
+    padding: 120px 0;
+    background-size: cover;
+}
+
+form .form-control {
+    border-radius: 30px;
+    border-color: #959595;
+    font-weight: 300;
+    padding: 10px 20px;
+    height: auto;
+}
+
+form textarea.form-control {
+    min-height: 46px;
+    height: 46px;
+    max-height: 200px;
+}
+
+form .form-control::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #ced4da;
+    opacity: 1;
+    /* Firefox */
+}
+
+form .form-control:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #ced4da;
+}
+
+form .form-control::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #ced4da;
+}
+
+form .btn-submit {
+    background-color: #FF2D00;
+    width: 100%;
+    border-radius: 30px;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+form form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+form form .is-invalid {
+    border-color: #dc3545;
+}
+
+form .col-image img {
+    width: 100%;
+}
+
+form a
+{
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 12px;
+    color: #FF2D00;
+}
+form a:hover
+{
+    color: #dc3545;
+}
+
+@media screen and (max-width: 992px) {
+    section.intro {
+        padding: 60px 0;
+    }
+    section.intro .row {
+        flex-direction: column-reverse;
+    }
+    section.intro .col-icon img {
+        max-width: 200px;
+        display: block;
+        margin: 0 auto;
+    }
+    section.intro .col-icon {
+        margin-bottom: 40px;
+    }
+    form {
+        padding: 60px 0;
+    }
+    form .col-image {
+        margin-bottom: 40px;
+    }
+}

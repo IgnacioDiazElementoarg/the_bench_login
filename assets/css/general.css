@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mont', "Open Sans";
+    font-weight: 400;
+}
+
+nav.navbar .menu {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+nav.navbar {
+    padding-top: 0;
+    background-color: transparent !important;
+    padding-left: 0;
+    padding-right: 0;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+}
+
+nav.navbar .navbar-brand img {
+    width: 70px;
+}
+
+nav.navbar .navbar-brand {
+    padding-top: 0;
+}
+
+nav.navbar .middle-logo {
+    position: absolute;
+    width: 240px;
+    right: calc(50% - 120px);
+    top: 40px;
+}
+
+.menu-displayed {
+    position: fixed;
+    display: none;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ccc;
+    z-index: 10000;
+}
+
+.menu-displayed .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 10% 0;
+}
+
+.menu-displayed .cross {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.menu-displayed .links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    text-align: center;
+}
+
+.menu-displayed .links .link {
+    font-size: 40px;
+    display: block;
+    color: #15224D;
+}
+
+.menu-displayed .links .link.active {
+    font-weight: bold;
+}
+
+.menu-displayed .links .link.highlated {
+    color: #FF2D00;
+}
+
+.desktop {
+    display: block;
+}
+
+.mobile {
+    display: none;
+}
+
+footer {
+    background: transparent linear-gradient(180deg, #DBDBDB 0%, #DEDEDE 43%, #BABABA 100%) 0% 0% no-repeat padding-box;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .copy {
+    color: #FFFFFF;
+    font-size: 12px;
+}
+
+footer .copy p {
+    margin: 0;
+}
+
+footer .icons {
+    margin: 15px 0;
+}
+
+footer .links .link {
+    color: #FFFFFF;
+    font-size: 20px;
+    margin: 0 15px;
+}
+
+footer .address {
+    margin: 15px;
+}
+
+footer .address p {
+    font-size: 13px;
+    color: #fff;
+    margin: 0;
+}
+
+footer .icons .link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    padding: 1px;
+    background-color: #fff;
+    border-radius: 50%;
+    color: #DEDEDE;
+    margin: 0 10px;
+}
+
+@media (min-width: 1200px) {
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl {
+        max-width: 1280px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .menu-displayed .links .link {
+        font-size: 26px;
+    }
+    nav.navbar .menu {
+        width: 30px;
+    }
+    nav.navbar .navbar-brand img {
+        width: 50px;
+    }
+    nav.navbar .middle-logo {
+        width: 110px;
+        right: calc(50% - 55px);
+        top: 20px;
+    }
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+    .menu-displayed .cross {
+        width: 30px;
+        top: 15px;
+    }
+}
